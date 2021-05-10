@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jinja Template</title>
+</head>
+
+<body>
+    <div>
+        <table>
+            <thead>
+
+            </thead>
+            <tbody>
+                {% for row in results %}
+                <tr>
+                    <td>{{ row['ID'] }}</td>
+                    <td>{{ row['Name'] }}</td>
+                    <td>{{ row['CountryCode'] }}</td>
+                    <td>{{ row['District'] }}</td>
+                    <td>{{ row['Population'] }}</td>
+                    <td>{{ row['Country'] }}</td>
+                    <td>{{ row['Continent'] }}</td>
+                    <td>{{ row['Continent'] }}</td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+
+    </div>
+</body>
+
+</html>
